@@ -5,9 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index-style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
     <title>Aitor Sánchez Rodríguez</title>
 </head>
 <body>
-    <a href="pages/buscardor/indexBuscador.html">Buscador</a>
+    <div class="py-2 px-5 mb-3" id="cabecera">
+        <header class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex">
+                <img id="icono-web" src="media/icon-index.png" alt="Icono de desarrollo web">
+                <h1 class="text-white h3 mb-0 ms-2 me-3">Aitor Sánchez Rodríguez</h1>
+            </div>
+            <div id="buscador">
+                <img src="media/lupa.png" alt="lupa" id="lupa-buscador">
+                <input class="ms-3" type="text" maxlength="25">
+            </div>
+        </header>
+    </div>
+    <div class="container-flex">
+        <img src="media/header.jpg" alt="cabecera" id="imagen-cabecera">
+    </div>
+    <div class="container my-3" id="seccion-pagina">
+        <a href="pages/buscardor/indexBuscador.html" class="btn btn-primary">Buscardor</a>
+    </div>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
