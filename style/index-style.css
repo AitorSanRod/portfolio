@@ -3,8 +3,13 @@
     padding: 0;
 }
 
-body{
+body {
     background-color: rgb(26, 26, 27) !important;
+    color: white !important;
+}
+
+h5 {
+    color: black;
 }
 
 #icono-web {
@@ -43,13 +48,71 @@ input {
     cursor: pointer;
 }
 
-#imagen-cabecera{
+#imagen-cabecera {
     height: 250px;
     width: 100%;
     margin-top: 70px;
     object-fit: cover;
 }
 
-/* #seccion-pagina{
+.cartasProyectos {
+    background-color: transparent;
+    border: 0px;
+    height: fit-content;
+}
 
-} */
+.cartasProyectos:hover {
+    transition: transform .5s ease;
+    -ms-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.card {
+    width: 18rem;
+}
+
+#seccion-pagina {
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: repeat(1, 100%);
+}
+
+#paginas {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: auto;
+}
+
+
+@media (max-width: 768px) {
+    #imagen-cabecera {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    #seccion-pagina {
+        margin-top: 80px !important;
+    }
+
+    input {
+        border-radius: 5px;
+        width: 200px;
+        padding-left: 5px;
+    }
+
+    #lupa-buscador {
+        background-color: white;
+        width: 23px;
+        height: auto;
+        position: absolute;
+        display: block;
+        left: 192px;
+        top: 2px;
+        user-select: none;
+        cursor: pointer;
+    }
+}
