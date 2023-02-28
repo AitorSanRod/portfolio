@@ -10,30 +10,46 @@
     <title>Aitor Sánchez Rodríguez</title>
 </head>
 <body>
-    <div class="d-flex align-items-center mb-3" id="cabecera">
+    <!-- Cabecera -->
+    <div class="d-flex align-items-center mb-3 border-bottom" id="cabecera">
         <header class="container d-flex align-items-center justify-content-between">
             <div class="d-flex align-items-center">
                 <img id="icono-web" src="media/icon-index.png" alt="Icono de desarrollo web">
                 <h1 class="text-white h3 mb-0 ms-2 me-3">Aitor Sánchez Rodríguez</h1>
             </div>
-            <div id="buscador">
+            <div id="cabecera-buscador">
                 <img src="media/lupa.png" alt="lupa" id="lupa-buscador">
-                <input class="ms-3" type="text" maxlength="25">
+                <input class="ms-3" type="text" maxlength="25" id="input-cabecera">
             </div>
         </header>
     </div>
     <div class="container-flex">
         <img src="media/header.jpg" alt="cabecera" id="imagen-cabecera">
     </div>
+    <!-- Página -->
     <div class="container my-3" id="seccion-pagina">
         <div id="enlacesInteres">
             <h2 class="text-center my-3">Enlaces</h2>
-            <a href="#" class="btn btn-primary">Curriculum Vitae</a>
+            <a href="#" class="btn btn-primary">Curriculum vitae</a>
         </div>
         <div>
             <h2 class="text-center my-3">Proyectos</h2>
             <div id="paginas"></div>
         </div>
+    </div>
+    <!-- Footer -->
+    <div class="mt-5 border-top" id="pie-pagina">
+        <footer class="d-flex justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-4 col-sm-6 ms-3 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">2023</span>
+            </div>
+            <ul class="nav me-3 col-md-4 col-sm-6 justify-content-end d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.flaticon.es/">Iconos</a></li>
+                <li class="ms-3"><a class="text-muted" href="https://unsplash.com/es">Imagenes</a></li>
+                <li class="ms-3"><a class="text-muted" href="www.linkedin.com/in/aitor-sanchez-rodriguez-webdev">LinkedIn</a></li>
+                <li class="ms-3"><a class="text-muted" href="#">Curriculum vitae</a></li>
+            </ul>
+        </footer>
     </div>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>

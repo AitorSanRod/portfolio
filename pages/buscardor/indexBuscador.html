@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main-style.css">
-    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/cabecera-footer.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
     <title>Buscador | Aitor Sánchez Rodríguez</title>
 </head>
 <body>
-    <h1>Buscador</h1>
-    <div id="contenedor">
-        <a href="../../index.html"><button>Volver al índice</button></a>
+    <!-- cabecera -->
+    <div class="d-flex align-items-center mb-3 border-bottom" id="cabecera">
+        <header class="container d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                <img id="icono-web" src="media/icon-index.png" alt="Icono de desarrollo web">
+                <h1 class="text-white h3 mb-0 ms-2 me-3">Aitor Sánchez Rodríguez</h1>
+            </div>
+        </header>
+    </div>
+    <!-- aplicación -->
+    <h1 class="text-center mt-5 pt-5">Buscador</h1>
+    <div id="contenedor" class="container">
+        <a href="../../index.html" class="btn btn-primary">Volver al índice</a>
         <div id="contenedor-busqueda">
             <input type="text" id="buscador" placeholder="Pikachu...">
             <h3>Encontrados: <span id="cuenta"></span></h3>
         </div>
         <div id="lista"></div>
     </div>
+    <!-- footer -->
+    <div class="mt-5 border-top" id="pie-pagina">
+        <footer class="d-flex justify-content-between align-items-center py-3">
+            <div class="col-md-4 col-sm-6 ms-3 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-muted">2023</span>
+            </div>
+            <ul class="nav me-3 col-md-4 col-sm-6 justify-content-end d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.flaticon.es/">Iconos</a></li>
+                <li class="ms-3"><a class="text-muted" href="https://unsplash.com/es">Imagenes</a></li>
+                <li class="ms-3"><a class="text-muted" href="www.linkedin.com/in/aitor-sanchez-rodriguez-webdev">LinkedIn</a></li>
+                <li class="ms-3"><a class="text-muted" href="#">Curriculum vitae</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>
     <script src="js/funciones.js"></script>
 </body>

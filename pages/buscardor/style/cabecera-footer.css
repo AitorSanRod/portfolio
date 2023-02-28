@@ -1,0 +1,17 @@
+#icono-web {
+    width: 40px;
+    height: auto;
+}
+#cabecera {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(26, 26, 27);
+    z-index: 1000;
+}
+#pie-pagina{
+    background-color: rgb(26, 26, 27);
+    max-height: 100px;
+    width: 100%;
+}
